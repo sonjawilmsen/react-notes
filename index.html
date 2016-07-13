@@ -2,19 +2,27 @@
 <html>
   <head>
     <script src="https://fb.me/react-0.13.3.min.js"></script>
-    <title>React try out</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+    <title>React notes</title>
   </head>
   <body>
-    <!-- <div id="root"></div>
-    <script src="/static/bundle.js"></script> -->
-    <script>
-      React.render(React.createElement('div', null, 'Hello world'), document.body);
+    <div id="react-container"></div>
+    <script type="text/babel">
+      var MyComponent = React.createClass({
+        render: function() {
+          return <div>
+              <h1>{this.props.text}</h1>
+              <p> </p>
+          </div>
+        }
+      });
+      React.render(<div>
+                    <MyComponent text="Hello World"/>
+                    <MyComponent text="How are you"/>
+                    <MyComponent text="Goodbye"/>
+                    </div>
+                    , document.getElementById('react-container'));
 
     </script>
-
   </body>
 </html>
-
-
-
-<script src="https://fb.me/react-0.13.3.min.js"></script>
