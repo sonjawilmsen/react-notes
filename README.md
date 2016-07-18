@@ -1,3 +1,7 @@
+For this project I am following a tutorial from Lynda.com where they make an app with editable stikcy notes. The example code is in older react format, I am using that as an example but am trying to use the modern React syntax.
+
+===================================================================================================================
+
 # React Starter
 
 ## Installation
